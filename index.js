@@ -13,9 +13,29 @@ inquirer.prompt([
         type: 'input',
         name: 'projDescrip',
         message: 'Write a description of your project',
-    }
+    },
+    {
+        type: 'input',
+        name: 'projInstall',
+        message: 'Write your installation instructions',
+    },
+    {
+        type: 'input',
+        name: 'projUsage',
+        message: 'Write your usage instructions',
+    },
+    {
+        type: 'input',
+        name: 'projContrib',
+        message: 'Write your contribution guidelines',
+    },
+    {
+        type: 'input',
+        name: 'projTests',
+        message: 'Write your test criteria',
+    },
 ]).then((data) =>{
-    console.log(data.projTitle, data.projDescrip);
+    console.log(data.projTitle, data.projDescrip, data.projInstall, data.projUsage, data.projContrib, data.projTests );
 })
 
 
