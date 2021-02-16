@@ -14,7 +14,11 @@ inquirer.prompt([
         name: 'projDescrip',
         message: 'Write a description of your project',
     }
-])
+]).then((data) =>{
+    console.log(data.projTitle, data.projDescrip);
+})
+
+
 //Description
 //Table of contents
 //installation
