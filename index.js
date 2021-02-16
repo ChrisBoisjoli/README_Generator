@@ -1,4 +1,20 @@
+const inquirer = require('inquirer');
+
+const fs = require('fs');
+
 // prompt for questions
+inquirer.prompt([
+    {
+        type: 'input',
+        name: 'projTitle',
+        message: 'What is the title of your project?',
+    },
+    {
+        type: 'input',
+        name: 'projDescrip',
+        message: 'Write a description of your project',
+    }
+])
 //Description
 //Table of contents
 //installation
