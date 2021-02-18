@@ -1,25 +1,15 @@
+// Packages needed for this application
 const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-const generateMarkdown = require('generateMarkdown');
+// const generateMarkdown = require('generateMarkdown');
 
 
-// TODO: Include packages needed for this application
+
 
 // TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
-// prompt for questions
-inquirer.prompt([
+const questions = [inquirer.prompt([
     {
         type: 'input',
         name: 'projTitle',
@@ -70,6 +60,17 @@ inquirer.prompt([
 ]).then((data) =>{
     console.log(data.projTitle, data.projDescrip, data.projInstall, data.projUsage, data.projContrib, data.projTests, data.projLicense, data.githubUserName, data.email);
 })
+];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
+
+// TODO: Create a function to initialize app
+function init() {}
+
+// Function call to initialize app
+init();
+// prompt for questions
 
 
 //Description
