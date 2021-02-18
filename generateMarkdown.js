@@ -98,6 +98,7 @@ function renderLicenseSection() {
   <li><a href="#questions">Questions</a></li>
   <li><a href="#license">License</a></li>
   </ol>
+  
   ## Description:
   ${answers.projDescrip}
   ## Installation:
