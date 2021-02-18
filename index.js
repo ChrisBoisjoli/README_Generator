@@ -6,9 +6,7 @@ const fs = require('fs');
 // const generateMarkdown = require('generateMarkdown');
 
 
-
-
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [inquirer.prompt([
     {
         type: 'input',
@@ -42,7 +40,7 @@ const questions = [inquirer.prompt([
     },
     {
         type: 'list',
-        name: 'projLicense',
+        name: 'license',
         message: 'Which license do you need?',
         choices:[ 'Apache', 'GNU', 'MIT', 'BSD', 'Unlicense']
       },
@@ -62,10 +60,10 @@ const questions = [inquirer.prompt([
 })
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {}
 
 // Function call to initialize app
