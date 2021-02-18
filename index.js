@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-// const generateMarkdown = require('generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 
 
 // Array of questions for user input
@@ -56,7 +56,7 @@ const questions = [inquirer.prompt([
     },
 
 ]).then((data) =>{
-    // console.log(data.projTitle, data.projDescrip, data.projInstall, data.projUsage, data.projContrib, data.projTests, data.projLicense, data.githubUserName, data.email);
+    console.log(data.projTitle, data.projDescrip, data.projInstall, data.projUsage, data.projContrib, data.projTests, data.projLicense, data.githubUserName, data.email);
 })
 ];
 
