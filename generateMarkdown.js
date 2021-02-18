@@ -1,7 +1,7 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function generateMarkdown(data){
-  let license = data.projLicense;
+function generateMarkdown(answers){
+  let license = answers.projLicense;
   console.log(license);
 function renderLicenseBadge() {
   switch (license) {
@@ -84,8 +84,8 @@ function renderLicenseSection() {
 }
 
 // Function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.projTitle}:
+// function generateMarkdown(data) {
+  return `# ${answers.projTitle}:
   ##  ${renderLicenseBadge()}
     
   ## Table of Contents:
@@ -99,26 +99,25 @@ function generateMarkdown(data) {
   <li><a href="#license">License</a></li>
   </ol>
   ## Description:
-  ${data.projDescrip}
+  ${answers.projDescrip}
   ## Installation:
-  ${data.projInstall}
+  ${answers.projInstall}
   ## Usage: 
-  ${data.projUsage}
+  ${answers.projUsage}
   ## Contributing:
-  ${data.projContrib}
+  ${answers.projContrib}
   ## Testing:
-  ${data.projTests} 
+  ${answers.projTests} 
   ## Questions:
   Do you have any questions?  Check out my Github Site:
-  www.github.com/${data.githubUserName}
+  www.github.com/${answers.githubUserName}
   Reach out via email:
-  <a class="link" href="mailto:${data.email}">${data.email}</a>
+  <a class="link" href="mailto:${answers.email}">${answers.email}</a>
   ## License:
-  Distributed under the ${data.license} license.  Full license information:
-  Licensed under the ${data.license} License; you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+  Distributed under the ${answers.license} license.  Full license information:
+  Licensed under the ${answers.license} License; you may not use this file except in compliance with the License. You may obtain a copy of the License at:
   ${renderLicenseLink()}
   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
   `;
-}
 };
 module.exports = generateMarkdown;

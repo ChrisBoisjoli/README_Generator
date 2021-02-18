@@ -61,11 +61,11 @@ const questions = [
 
 // Function to initialize app
 function init() {
-    return inquirer.prompt (questions).then((data)=> {
-        generateMarkdown();
-        const projReadme = generateMarkdown(data);
+    return inquirer.prompt (questions).then((answers)=> {
+        // generateMarkdown();
+        const projReadme = generateMarkdown(answers);
         
-        fs.writeFile('README.md', projReadme, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
+        fs.writeFile('./completed/README.md', projReadme, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
     })
     
 }
