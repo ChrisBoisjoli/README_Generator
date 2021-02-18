@@ -40,7 +40,7 @@ const questions = [inquirer.prompt([
     },
     {
         type: 'list',
-        name: 'license',
+        name: 'projLicense',
         message: 'Which license do you need?',
         choices:[ 'Apache', 'GNU', 'MIT', 'BSD', 'Unlicense']
       },
@@ -56,7 +56,7 @@ const questions = [inquirer.prompt([
     },
 
 ]).then((data) =>{
-    console.log(data.projTitle, data.projDescrip, data.projInstall, data.projUsage, data.projContrib, data.projTests, data.projLicense, data.githubUserName, data.email);
+    // console.log(data.projTitle, data.projDescrip, data.projInstall, data.projUsage, data.projContrib, data.projTests, data.projLicense, data.githubUserName, data.email);
 })
 ];
 

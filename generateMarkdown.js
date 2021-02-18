@@ -1,10 +1,10 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function generateMarkdown(data){
-  let license = data.license;
+  let license = data.projLicense;
   console.log(license);
-function renderLicenseBadge(license) {
-  switch (data) {
+function renderLicenseBadge() {
+  switch (license) {
     case "Apache":
       badge =
         "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
@@ -33,8 +33,8 @@ function renderLicenseBadge(license) {
 
 // Function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  switch (data) {
+function renderLicenseLink() {
+  switch (license) {
   case "Apache":
     link = "https://opensource.org/licenses/Apache-2.0";
     break;
@@ -58,7 +58,30 @@ return link;}
 
 // Function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  switch (license) {
+    case "Apache":
+      link = "https://opensource.org/licenses/Apache-2.0";
+      break;
+    case "GNU":
+      link = "https://www.gnu.org/licenses/gpl-3.0";
+      break;
+    case "MIT":
+      link = "https://opensource.org/licenses/MIT";
+      break;
+    case "BSD":
+      link = "https://opensource.org/licenses/BSD-3-Clause";
+      break;
+    case "Unlicense":
+      link = "http://unlicense.org/";
+      break;
+    default:
+      link = "";
+      break;
+  }
+  return link;
+
+}
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
