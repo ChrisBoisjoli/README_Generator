@@ -85,9 +85,40 @@ function renderLicenseSection(license) {
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+  return `# ${data.projTitle}:
+  ##  ${renderLicenseBadge()}
+    
+  ## Table of Contents:
+  <ol>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#testing">Testing</a></li>
+  <li><a href="#questions">Questions</a></li>
+  <li><a href="#license">License</a></li>
+  </ol>
+  ## Description:
+  ${data.projDescrip}
+  ## Installation:
+  ${data.projInstall}
+  ## Usage: 
+  ${data.projUsage}
+  ## Contributing:
+  ${data.projContrib}
+  ## Testing:
+  ${data.projTests} 
+  ## Questions:
+  Do you have any questions?  Check out my Github Site:
+  www.github.com/${data.githubUserName}
+  Reach out via email:
+  <a class="link" href="mailto:${data.email}">${data.email}</a>
+  ## License:
+  Distributed under the ${data.license} license.  Full license information:
+  Licensed under the ${data.license} License; you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+  ${renderLicenseLink()}
+  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
+  `;
 }
 };
 module.exports = generateMarkdown;
