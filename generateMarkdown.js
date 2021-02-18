@@ -58,7 +58,7 @@ return link;}
 
 // Function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function renderLicenseSection() {
   switch (license) {
     case "Apache":
       link = "https://opensource.org/licenses/Apache-2.0";

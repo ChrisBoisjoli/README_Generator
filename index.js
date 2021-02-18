@@ -65,34 +65,10 @@ function init() {
         generateMarkdown(data);
         const projReadme = generateMarkdown(data);
         
-        fs.writeFile('projectREADME.md', projReadme, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
+        fs.writeFile('./completed/projectREADME.md', projReadme, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
     })
     
 }
 
 // Function call to initialize app
 init();
-// prompt for questions
-
-
-//Description
-//Table of contents
-//installation
-//usage
-//license
-//contribution
-//tests
-//questions
-
-//build readme.md
-
-//choose license add badge near top notice added to license section
-
-//github username added to Questions with link to profiel
-
-//email address added to questions how to reach instructions
-
-//table of contents link to section of readme
-
-
-
