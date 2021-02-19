@@ -13,7 +13,7 @@
   </ol>
   
   ## Description:
-  It is necessary to provide a READEME for all your projects so users know how to use them. This information will provide users how to use your application, how to install, test, and contribute, and license. This README Generator will provide a shell for you to easily add your data. 
+  It is necessary to provide a READEME for all your projects so users know how to use them. This information will provide users how to use your application, how to install, test, and contribute, and license. This README Generator will provide a shell for you to easily add your data. Most of this README was generated this way!
   ## Installation:
   This application is run utilizing your terminal to build the README for you. It uses the JavaScript file and Node to create it. First you want to install inquirer to be able to utilize the app by typing
   ```bash
