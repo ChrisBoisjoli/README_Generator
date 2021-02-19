@@ -23,6 +23,8 @@ The application is invoked by using the following command:
 ```bash
 node index.js
 ```
+![In Use](./assets/readme.gif)
+
   ## Usage: 
   The user will open the command terminal and then run node index.js on the command line. This will prompt the user to input all the necessary information and generate the README.
   ## Contributing:
